@@ -50,7 +50,7 @@ def main():
         for line in file:
             line = line.strip().lower() # Lowercase, remove newline
             line = delete_punctuation(line)
-            all_text += line
+            all_text += line + " "
         count_each_word(all_text)
 
 
