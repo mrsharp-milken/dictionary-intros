@@ -21,14 +21,14 @@ def load_data(filename):
     with each key is a list of the (integer) values presenting the
     cumulative number of infections at that location.
     """
-
+    cumulative_cases = {}
     with open(filename, 'r') as file:   # Open file to read
         for line in file:
             print(line) 
             
             # Write your code here for part 1!
     
-    return {}
+    return cumulative_cases
 
 
 def daily_cases(cumulative):
